@@ -1,7 +1,16 @@
+
+html{
+  min-height: 100%;
+
+}
 body {
   margin: 0;
   padding: 0;
+  margin-bottom: 0;
   font-family: sans-serif;
+  background-color: red;
+  
+
 }
 
 .appname{
@@ -11,15 +20,23 @@ body {
   text-decoration: none !important;
 }
 
+#root{
+  overflow: hidden;
+  height: 100%;
+  
+}
+.rootView{ 
+  min-height: 100%;
+}
+
 .footer{
-  display: inline-block;
+  clear: both;
+  display: inline-block;     
   height: 50px;
-  width: 100%;
-  bottom: 0;
-  position: absolute;
+  width: 100%;   
+  margin: 0 auto;   
   text-align: center;
-  background-color: beige;
-  z-index:10;  
+  background-color: beige;  
 }
 
 .pageContent{
@@ -27,10 +44,14 @@ body {
   height: 100%;
   width: 100%;
   padding-left: 5px;
-  padding-right: 5px;    
+  padding-right: 5px;   
+  display: block; 
+  position: inherit;
 }
 
-.addEventPage{    
+.addEventPage{ 
+  clear: both;
+  overflow: auto;   
   display: inline-block;
   text-align: center;
   padding-bottom: 50px;
@@ -40,7 +61,6 @@ body {
   margin-top: 10px;
   background-color: aquamarine;
   border-radius: 8px;
-  height: 100%;
   width: 25%;      
 }
 .dividerSpace{
@@ -48,4 +68,28 @@ body {
 }
 .submitBtn{
   margin-top: 20px;
+}
+
+.listView li{
+  list-style-type: none;
+}
+
+.listItem{  
+  display:block;
+  margin: 5px;
+  float: left;
+}
+
+.card{
+  max-width: 300px; 
+  padding-left: 0px;
+  padding-right: 0px; 
+}
+.cardMedia{  
+  padding-top: '56.25%'  
+}
+
+.cardMedia img{
+  width: 100%;  
+
 }

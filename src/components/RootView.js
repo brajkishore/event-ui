@@ -23,7 +23,7 @@ class RootView extends Component {
 
     render() {
         return (
-            <div class="">
+            <div className="rootView">
                 <Header _setPage={this.setPageContent}/>
                 <PageContent>
                     {this.state.comp}

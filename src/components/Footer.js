@@ -8,7 +8,7 @@ class Footer extends Component {
     render() {
         return (
             <div className="footer">
-                <h6>copyright @2018</h6>
+                <p>copyright @2018</p>
             </div>
         );
     }
